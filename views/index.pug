@@ -1,0 +1,56 @@
+doctype html
+html 
+    head
+        title Dance Academy
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar 
+            ul
+                div#logo 
+                    img(src="static/dance2.png" )
+                li #[a(href='/') Home ]
+                li #[a(href='/') About] 
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info] 
+                li #[a(href='/') Contacts] 
+
+    section#introsection 
+        | Welcome to Jordar Dance Academy   
+    
+    section#ourmission 
+        h2 our missions
+        div.card
+            h3  Dance Perfect
+            div.card-box
+                div.card-img  
+                    img(src='/static/dance3.png')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+        div.card 
+            h3  Dance India
+            div.card-box 
+                div.card-img  
+                    img(src='/static/dance4.jpg')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+        div.card 
+            h3  Expert Teaching
+            div.card-box 
+                div.card-img  
+                    img(src='/static/dance3.png')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+            
+    section#sponsorsection
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/logo1.png", alt="our sponsors",class='spimage')
+            img(src="/static/logo.png", alt="our sponsors",class='spimage')
+            img(src="/static/logo3.png", alt="our sponsors",class='spimage')
+    
+    footer#footer 
+        | our footer here
+    script 
+     include ../static/index.js 
+     

@@ -1,0 +1,44 @@
+extends base.pug
+
+block script 
+  script(src="/static/index.js") 
+
+block style 
+    style 
+      include ../static/style.css 
+
+block content 
+    section#introsection 
+        | Welcome to Jordar Dance Academy   
+    
+    section#ourmission 
+        h2 our missions
+        div.card
+            h3  Dance Perfect
+            div.card-box
+                div.card-img  
+                    img(src='/static/dance3.png')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+        div.card 
+            h3  Dance India
+            div.card-box 
+                div.card-img  
+                    img(src='/static/dance4.jpg')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+        div.card 
+            h3  Expert Teaching
+            div.card-box 
+                div.card-img  
+                    img(src='/static/dance3.png')
+                div.card-content 
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium 
+            
+    section#sponsorsection
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/logo1.png", alt="our sponsors",class='spimage')
+            img(src="/static/logo2.png", alt="our sponsors",class='spimage')
+            img(src="/static/logo3.png", alt="our sponsors",class='spimage')
+    
